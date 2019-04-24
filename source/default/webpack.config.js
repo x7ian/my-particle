@@ -34,7 +34,7 @@ module.exports = {
             options: {
               config: {
                 ctx: {
-                  tailwindConfig: path.resolve(__dirname, 'tailwind.js'),
+                  tailwindConfig: path.resolve(__dirname, 'tailwind.config.js'),
                 },
               },
             },
