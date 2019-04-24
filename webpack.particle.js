@@ -55,16 +55,16 @@ module.exports = {
             },
           },
           {
+            loader: 'resolve-url-loader',
+            options: {
+              sourceMap: true,
+            },
+          },
+          {
             loader: 'postcss-loader',
             options: {
               sourceMap: true,
               ident: 'postcss',
-            },
-          },
-          {
-            loader: 'resolve-url-loader',
-            options: {
-              sourceMap: true,
             },
           },
           {

@@ -64,9 +64,9 @@ export default {
 // 00-protons/variables is provided by Webpack, but it is possible to:
 //   @import '00-protons/variables';
 .card-hover:hover {
-  background-color: $light;
+  background-color: lightgray;
 }
 .scoped-background {
-  background-color: $white;
+  background-color: white;
 }
 </style>

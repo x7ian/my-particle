@@ -1,28 +1,26 @@
+// Custom typography/font printing styles
 //
-// Base PRINTING (generated) CSS styles
-//
-// WARNING: Do NOT include this file in other .scss files. It WILL duplicate
-// output. Instead, import as a dependency in a component's .js file.
-//
-// For instance, from @molecules/card/index.js:
-//
-//   import base from '00-protons';
-//   import button from '01-atoms/button';
-//
-// This guarantees both de-duplication and existence of required, generated CSS.
-//
+// To test out local vs remote fonts, uncomment one or the other below.
 
 // The non-printing variables, functions, and mixins of 00-protons/variables
 // are provided to this file via:
 //   webpack.particle.js: sass-loader.data|includePaths
 
-// Bring in all Bootstrap printing styles, customized by
-//   00-protons/non-printing/_bootstrap-overrides.scss
-//@import 'printing/bootstrap-printing';
+// Example: remote fonts
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 
-// Custom CSS-generating output
-//@import 'printing/type';
-//@import 'printing/forms';
-//@import 'printing/tables';
-//@import 'printing/transitions';
-//@import 'printing/elements';
+// Adobe Typekit. y0urh45h will need to be updated with your own key.
+// For more information on how to create your own kit and generate your
+// own key visit https://helpx.adobe.com/in/fonts/using/add-fonts-website.html
+//@import url('https://use.typekit.net/y0urh45h.css');
+
+// Example: local fonts
+//@font-face {
+//  font-family: 'Oswald';
+//  font-style: normal;
+//  font-weight: 400;
+//  src: local('Oswald Regular'), local('Oswald-Regular'), url(./fonts/Oswald-Medium.ttf) format('truetype');
+//  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+//}
+

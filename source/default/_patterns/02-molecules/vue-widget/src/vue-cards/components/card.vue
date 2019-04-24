@@ -65,7 +65,7 @@ export default {
 
 // Make .active green for just these demo cards
 .active {
-  background-color: $success;
+  background-color: green;
 }
 // Hide list-group-item backgrounds for just these demo cards
 .list-group-item {

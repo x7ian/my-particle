@@ -147,24 +147,24 @@ $hand-thickness: 6px;
   background-color: salmon;
 }
 .success {
-  background-color: $success;
+  background-color: green;
 }
 .primary {
-  background-color: $primary;
+  background-color: blue;
 }
 .dark {
-  background-color: $dark;
+  background-color: darkslateblue;
 }
 .yellow {
-  background-color: $yellow;
+  background-color: yellow;
 }
 .purple {
-  background-color: $purple;
+  background-color: purple;
 }
 .orange {
-  background-color: $orange;
+  background-color: orange;
 }
 .cyan {
-  background-color: $cyan;
+  background-color: cyan;
 }
 </style>

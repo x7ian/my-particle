@@ -14,7 +14,7 @@ import './_vue-cards.twig';
 import './_vue-clock.twig';
 
 // Module styles
-import './_vue-widget.scss';
+// import './_vue-widget.scss';
 
 // All Vue widgets only execute on existence of DOM
 import FacetTableVue from './src/vue-cryptos';

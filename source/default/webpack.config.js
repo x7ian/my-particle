@@ -17,22 +17,6 @@ module.exports = {
         test: /\.(sa|sc|c)ss$/,
         use: [
           {
-            loader: 'sass-loader',
-            options: {
-              // Used to generate JSON about variables like colors, fonts
-              functions: sassExportData({
-                name: 'export_data',
-                path: path.resolve(__dirname, '_data/'),
-              }),
-              // Enable Sass to import other components via, eg:
-              // `@import 01-atoms/thing/thing`
-              includePaths: [PATH_PATTERNS],
-              // ALL Sass partials should be provided with non-printing
-              // variables, mixins, and functions
-              data: '@import "00-protons/variables";',
-            },
-          },
-          {
             loader: 'postcss-loader',
             options: {
               config: {
@@ -40,6 +24,22 @@ module.exports = {
                   tailwindConfig: path.resolve(__dirname, 'tailwind.config.js'),
                 },
               },
+            },
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              // Used to generate JSON about variables like colors, fonts
+              // functions: sassExportData({
+              //   name: 'export_data',
+              //   path: path.resolve(__dirname, '_data/'),
+              // }),
+              // Enable Sass to import other components via, eg:
+              // `@import 01-atoms/thing/thing`
+              includePaths: [PATH_PATTERNS],
+              // ALL Sass partials should be provided with non-printing
+              // variables, mixins, and functions
+              // data: '@import "00-protons/variables";',
             },
           },
         ],

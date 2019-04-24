@@ -59,21 +59,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss">
-// 00-protons/variables is provided by Webpack, but it is possible to:
-//   @import '00-protons/variables';
-
-// This is mainly here to show that all variables and mixins are available to
-// Sass here.
-.vue-banner {
-  margin: map-get($spacers, 5);
-  padding: map-get($spacers, 4);
-  font-size: $font-size-lg;
-  background-color: map-get($theme-colors, 'new');
-
-  h3 {
-    color: map-get($theme-colors, 'light');
-  }
-}
-</style>

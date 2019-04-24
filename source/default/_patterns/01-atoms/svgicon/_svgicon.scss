@@ -6,6 +6,7 @@
 // ./scss/_icons-generated is automatically made available because
 // 00-protons/variables is provided to every scss file and _icons-generated
 // is @import'd within 00-protons/variables
+@import '01-atoms/svgicon/scss/_icons-generated';
 
 // Default styles to maintain inline-block functionality
 // since the SVG is wrapped in a div
@@ -35,11 +36,11 @@ $svgicons: map-keys($sprites);
 }
 
 // Loop over every theme-color and create a CSS class to colorize it
-@each $color in map_keys($theme-colors) {
-  .color-fill--#{$color} {
-    color: theme-color(#{$color});
-  }
-}
+//@each $color in map_keys($theme-colors) {
+//  .color-fill--#{$color} {
+//    color: theme-color(#{$color});
+//  }
+//}
 
 svg,
 g,

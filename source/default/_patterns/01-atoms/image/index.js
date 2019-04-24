@@ -1,5 +1,5 @@
 // Import custom sass, includes Bootstrap sass
-import './_image.scss';
+// import './_image.scss';
 
 // Pull in system-wide images
 import './logo.svg';
