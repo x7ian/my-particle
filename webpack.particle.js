@@ -8,10 +8,6 @@
 // Library Imports
 const { ProgressPlugin, ProvidePlugin } = require('webpack');
 
-// Loaders
-const postcssPresetEnv = require('postcss-preset-env');
-const cssnano = require('cssnano');
-
 // Plugins
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
@@ -63,10 +59,6 @@ module.exports = {
             options: {
               sourceMap: true,
               ident: 'postcss',
-              plugins: () =>
-                NODE_ENV === 'development'
-                  ? [postcssPresetEnv()] // Light processing for dev
-                  : [postcssPresetEnv(), cssnano()], // Heavy processing for prod
             },
           },
           {

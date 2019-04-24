@@ -3,6 +3,7 @@
  */
 
 import './_base.scss';
+import './tailwind.css';
 
 // Export global variables.
 export default {

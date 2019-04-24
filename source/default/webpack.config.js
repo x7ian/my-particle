@@ -29,6 +29,16 @@ module.exports = {
               includePaths: [PATH_PATTERNS],
             },
           },
+          {
+            loader: 'postcss-loader',
+            options: {
+              config: {
+                ctx: {
+                  tailwindConfig: path.resolve(__dirname, 'tailwind.js'),
+                },
+              },
+            },
+          },
         ],
       },
     ],
