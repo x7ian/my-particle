@@ -2,7 +2,7 @@
  * Alert
  */
 
-import 'bootstrap/js/dist/alert';
+// import 'bootstrap/js/dist/alert';
 
 // Module Dependencies
 import 'protons';
@@ -11,7 +11,7 @@ import 'protons';
 import './_alert.twig';
 
 // Module styles
-import './_alert.scss';
+// import './_alert.scss';
 
 export const name = 'alert';
 

@@ -2,7 +2,7 @@
  * Base css generation and global js logic.
  */
 
-import './_base.scss';
+// import './_base.scss';
 import './tailwind.css';
 
 // Export global variables.

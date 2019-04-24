@@ -2,7 +2,7 @@
  * Dropdown
  */
 
-import 'bootstrap/js/dist/dropdown';
+// import 'bootstrap/js/dist/dropdown';
 
 // Custom
 import 'protons';
@@ -11,7 +11,7 @@ import 'protons';
 import './_dropdown.twig';
 
 // Import custom sass, includes Bootstrap sass
-import './_dropdown.scss';
+// import './_dropdown.scss';
 
 export const name = 'dropdown';
 
