@@ -2,7 +2,7 @@
  * Button
  */
 
-import $ from 'jquery';
+// import $ from 'jquery';
 // import 'bootstrap/js/dist/button';
 
 // Custom
@@ -16,13 +16,14 @@ import './_button-dropdown-split.twig';
 
 // Import custom sass, includes Bootstrap sass
 // import './_button.scss';
+import './_button.css';
 
 export const name = 'button';
 
 export function disable() {}
 
-export function enable($context) {
-  $('#blah', $context).button('toggle');
+export function enable() {
+  // $('#blah', $context).button('toggle');
 }
 
 export default enable;

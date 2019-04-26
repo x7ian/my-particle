@@ -3,7 +3,7 @@
  */
 const path = require('path');
 
-const sassExportData = require('@theme-tools/sass-export-data');
+// const sassExportData = require('@theme-tools/sass-export-data');
 const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin');
 
 const { sets } = require('./namespaces');
@@ -52,14 +52,15 @@ module.exports = {
       path.resolve(PATH_PATTERNS, '01-atoms/svgicon/svg/**/*.svg'),
       {
         styles: {
-          filename: path.resolve(
-            PATH_PATTERNS,
-            '01-atoms/svgicon/scss/_icons-generated.scss'
-          ),
-          variables: {
-            sizes: 'svgicon-sizes', // Prevent collision with Bootstrap $sizes
-            variables: 'svgicon-variables',
-          },
+          filename: 'icons.css',
+          // filename: path.resolve(
+          //   PATH_PATTERNS,
+          //   '01-atoms/svgicon/scss/_icons-generated.scss'
+          // ),
+          // variables: {
+          //   sizes: 'svgicon-sizes', // Prevent collision with Bootstrap $sizes
+          //   variables: 'svgicon-variables',
+          // },
         },
         output: {
           svg4everybody: true,
